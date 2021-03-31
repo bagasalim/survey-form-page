@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Survey Form Page</title>
+</head>
+<body>
+    
+        <h1 id="title">Survey Fantasy Premier League</h1>
+        <p id="description">Feeling Regret Every Gameweek Is My Middle Name</p>
+    
+        <form id="survey-form">
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">Best Overall Rank In A Season
+                <input type="number" id="number" placeholder="Best Rank" min="1" max="100000">
+            </label>
+
+            <label for="dropdown" id="dropdown-label">
+                Which Chips Are Useless?
+                <select id="dropdown">
+                    <option disabled selected value="">Select an option</option>
+                    <option value="Bench Boost">Bench Boost</option>
+                    <option value="Bench Boost">Free Hit</option>
+                    <option value="Bench Boost">Triple Captain</option>
+                </select>
+            </label>
+
+            <label for="teams" id="radio-label">Choose Your Favorite Teams?</label>
+            <input type="radio" name="teams" value="Arsenal" checked>Arsenal <br>
+            <input type="radio" name="teams" value="Aston Villa">Aston Villa <br>
+            <input type="radio" name="teams" value="Brighton and Hove Albion">Brighton and Hove Albion <br>
+            <input type="radio" name="teams" value="Burnley">Burnley <br>
+            <input type="radio" name="teams" value="Chelsea">Chelsea <br>
+            <input type="radio" name="teams" value="Crystal Palace">Crystal Palace <br>
+            <input type="radio" name="teams" value="Everton">Everton <br>
+            <input type="radio" name="teams" value="Fulham">Fulham <br>
+            <input type="radio" name="teams" value="Leeds United">Leeds United <br>
+            <input type="radio" name="teams" value="Leicester City">Leicester City <br>
+            <input type="radio" name="teams" value="Liverpool">Liverpool <br>
+            <input type="radio" name="teams" value="Manchester City">Manchester City <br>
+            <input type="radio" name="teams" value="Manchester United">Manchester United <br>
+            <input type="radio" name="teams" value="Newcastle United">Newcastle United <br>
+            <input type="radio" name="teams" value="Sheffield United">Sheffield United <br>
+            <input type="radio" name="teams" value="Southampton">Southampton <br>
+            <input type="radio" name="teams" value="Tottenham Hotspurs">Tottenham Hotspurs <br>
+            <input type="radio" name="teams" value="West Bromwich Albion">West Bromwich Albion <br>
+            <input type="radio" name="teams" value="West Ham United">West Ham United <br>
+            <input type="radio" name="teams" value="Wolverhampton Wanderers">Wolverhampton Wanderers <br>
+            
+            <label for="transfer" id="checkbox-label">What Are Your Considerations When Making Player Transfer</label>
+            <input type="checkbox" name="transfer" value="Join the Bandwagon">Join the Bandwagon <br>
+            <input type="checkbox" name="transfer" value="Player Fixtures Relative Easy">Player Fixtures Relative Easy <br>
+            <input type="checkbox" name="transfer" value="Good Statistics in Form and Total Scores">Good Statistics in Form and Total Scores <br>
+            <input type="checkbox" name="transfer" value="Friend or Experts Recommendations">Friends or Experts Recommendations <br>
+            <input type="checkbox" name="transfer" value="The Player Who Scores Last Gameweek">The Player Who Scores Last Gameweek <br>
+            <input type="checkbox" name="transfer" value="Follow Your Innocent Heart">Follow Your Innocent Heart <br>
+
+            <label for="suggestions" id="suggestion-label">Suggestions to Make FPL Increase Benefit to You
+                <textarea id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions"></textarea>
+            </label>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+
+     <div class="footer">
+         <p>
+            This Survey Was Made For freecodecamp.org Submission <i class="fab fa-free-code-camp"></i> 
+         </p>
+     </div>   
+   
+       
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
